@@ -51,7 +51,7 @@ class TestBlobReaderFlow(BaseTest):
         try:
             self.sumo_endpoint_url = os.environ["SumoEndpointURL"]
         except KeyError:
-            raise Exception("SumoEndpointURL/StorageAcccountConnectionString environment variables are not set")
+            raise Exception("SumoEndpointURL/StorageAccountConnectionString environment variables are not set")
 
         self.repo_name, self.branch_name = self.get_git_info()
 
